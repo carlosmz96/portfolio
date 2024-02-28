@@ -1,0 +1,59 @@
+.nav {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  display: block;
+}
+
+.enlace {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.enlace-activo {
+  background-color: white;
+  margin: 1rem 0 1rem 1rem;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.name {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.cont-image {
+  display: flex;
+  justify-content: center;
+
+}
+
+.image {
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  width: 90px;
+}
+
+.negrita {
+  font-weight: 600;
+}
+
+.redes {
+  text-align: center;
+  width: 100%;
+}
+
+.redes a:hover {
+  color: #4b5563;
+}
+
+.esp-izq {
+  margin-left: 1rem;
+}

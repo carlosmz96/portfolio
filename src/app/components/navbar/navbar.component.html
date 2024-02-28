@@ -1,0 +1,26 @@
+<div class="nav">
+  <div class="cont-image">
+    <div class="image">
+      <a href="https://github.com/carlosmz96" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/42782906?v=4" alt="Foto de perfil" height="90">
+      </a>
+    </div>
+  </div>
+
+  <div class="name">
+    <div><strong>Carlos Muñoz</strong></div>
+    <div>Desarrollador FullStack</div>
+  </div>
+
+  <div class="redes mt-2">
+    <a href="https://www.linkedin.com/in/carlosmunozarenas/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/carlosmz96" target="_blank" class="esp-izq"><i class="fa-brands fa-github fa-lg"></i></a>
+  </div>
+</div>
+
+<!-- Enlaces -->
+<div *ngFor="let e of enlaces">
+  <div [routerLinkActive]="['']" #link="routerLinkActive" [ngClass]="link.isActive ? 'enlace-activo' : 'enlace'">
+    <a routerLink="{{e.enlace}}" [ngClass]="link.isActive ? 'negrita' : ''">{{e.nombre}}</a>
+  </div>
+</div>

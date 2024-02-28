@@ -1,0 +1,20 @@
+<div class="p-5">
+
+  <h1 class="mb-3">
+    <strong>Experiencia laboral</strong>
+  </h1>
+
+  <hr>
+
+  <p-accordion [activeIndex]="0">
+    <p-accordionTab header="Ayesa Advanced Technologies">
+      <p-timeline [value]="events">
+        <ng-template pTemplate="content" let-event>
+          <p-card [header]="event.status" [subheader]="event.date">
+            <p [innerHTML]="event.description"></p>
+          </p-card>
+        </ng-template>
+      </p-timeline>
+    </p-accordionTab>
+  </p-accordion>
+</div>

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+
+.form-30 {
+  width: 30%;
+  background-color: rgb(240, 240, 240);
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  flex: 1;
+  position: relative;
+}
+
+.form-70 {
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  border-top: 2px solid rgb(240, 240, 240);
+  border-bottom: 2px solid rgb(240, 240, 240);
+  border-right: 2px solid rgb(240, 240, 240);
+  float: right;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-height: 500px;
+}
