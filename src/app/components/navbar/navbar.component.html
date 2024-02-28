@@ -13,14 +13,20 @@
   </div>
 
   <div class="redes mt-2">
-    <a href="https://www.linkedin.com/in/carlosmunozarenas/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-    <a href="https://github.com/carlosmz96" target="_blank" class="esp-izq"><i class="fa-brands fa-github fa-lg"></i></a>
+    <a href="https://www.linkedin.com/in/carlosmunozarenas/" target="_blank"><i
+        class="fa-brands fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/carlosmz96" target="_blank" class="esp-izq"><i
+        class="fa-brands fa-github fa-lg"></i></a>
   </div>
 </div>
 
 <!-- Enlaces -->
-<div *ngFor="let e of enlaces">
+<div class="menu-vertical" *ngFor="let e of enlaces">
   <div [routerLinkActive]="['']" #link="routerLinkActive" [ngClass]="link.isActive ? 'enlace-activo' : 'enlace'">
     <a routerLink="{{e.enlace}}" [ngClass]="link.isActive ? 'negrita' : ''">{{e.nombre}}</a>
   </div>
+</div>
+
+<div class="menu-horizontal">
+  <p-dropdown [options]="enlaces" [(ngModel)]="enlaceActivo" optionLabel="nombre" (ngModelChange)="goToActive()"></p-dropdown>
 </div>

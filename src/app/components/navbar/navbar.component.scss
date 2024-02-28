@@ -57,3 +57,43 @@
 .esp-izq {
   margin-left: 1rem;
 }
+
+:host ::ng-deep .p-dropdown {
+  margin: 0 1rem 1rem 1rem;
+  width: calc(100% - 32px);
+  border: none;
+  box-shadow: none;
+}
+
+:host ::ng-deep ul {
+  padding-left: 0px;
+}
+
+:host ::ng-deep .p-dropdown .p-dropdown-label {
+  color: #69b199;
+  font-weight: 600;
+}
+
+:host ::ng-deep .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+  color: #69b199;
+  font-weight: 600;
+  background-color: #e6e6e6 !important;
+}
+
+:host ::ng-deep .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  color: #69b199;
+}
+
+.menu-horizontal {
+  display: none;
+}
+
+@media (width < 768px) {
+  .menu-vertical {
+    display: none;
+  }
+
+  .menu-horizontal {
+    display: block;
+  }
+}
