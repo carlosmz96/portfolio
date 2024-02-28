@@ -11,10 +11,6 @@ a {
   color: #69b199;
 }
 
-// h1, h2, h3, h4 {
-//   text-transform: uppercase;
-// }
-
 h1 {
   font-size: 28px;
 }
@@ -40,6 +36,15 @@ h4 {
   box-shadow: inset 0 0 11px rgba(33, 33, 33, .2);
 }
 
+.padding-contenido {
+  padding: 2.5rem;
+}
+
+@media (width < 768px) {
+  .padding-contenido {
+    padding: 1rem;
+  }
+}
 
 /* PRIMENG */
 
