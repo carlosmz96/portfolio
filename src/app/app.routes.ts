@@ -5,11 +5,11 @@ import { TecnologiasComponent } from './components/tecnologias/tecnologias.compo
 import { EstudiosCertComponent } from './components/estudios-cert/estudios-cert.component';
 
 export const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'inicio',
-  //   pathMatch: 'full'
-  // },
+  {
+    path: '',
+    redirectTo: 'presentacion',
+    pathMatch: 'full'
+  },
   {
     path: 'presentacion',
     component: InicioComponent
